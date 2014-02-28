@@ -3,6 +3,8 @@
 body {
     margin: 20px;
     font-family: verdana;
+
+    background: url("/olimpic-chart/images/body-bg.jpg");
 }
 
 a {
@@ -23,7 +25,7 @@ a {
 
     border-radius: 10px;
     border: 1px solid #ebf4ff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
 }
 
 .page-header {

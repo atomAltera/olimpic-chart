@@ -32,16 +32,13 @@ var node = chart.selectAll(".node")
         return "translate(" + x + "," + y + ")";
     });
 
-
 node.transition()
     .duration(1000)
     .delay(function (d, i) {
         return i * 50
     })
     .attr('opacity', '1')
-    .attr('transform', function (d) {
-        return "translate(" + d.x + "," + d.y + ")";
-    });
+    .attr('transform', function (d) { return "translate(" + d.x + "," + d.y + ")"; });
 
 node.append('circle')
     .attr('class', 'circle')
@@ -49,26 +46,14 @@ node.append('circle')
     .style('stroke', 'silver')
     .style('stroke-width', 2)
     .style('stroke-opacity', 0.5)
-    .attr('r', function (d) {
-        return d.r
-    });
+    .attr('r', function (d) { return d.r });
 
 node.append('image')
-    .attr('xlink:href', function (d) {
-        return d.image
-    })
-    .attr('width', function (d) {
-        return d.r * 1.2;
-    })
-    .attr('height', function (d) {
-        return d.r * 1.2;
-    })
-    .attr('x', function (d) {
-        return  d.r / -1.6
-    })
-    .attr('y', function (d) {
-        return  d.r / -1.6
-    });
+    .attr('xlink:href', function (d) { return d.image })
+    .attr('width', function (d) { return d.r * 1.2; })
+    .attr('height', function (d) { return d.r * 1.2; })
+    .attr('x', function (d) { return  d.r / -1.6 })
+    .attr('y', function (d) { return  d.r / -1.6 });
 
 var hint = d3.select(".chart").append('g')
     .attr('class', 'hint')
