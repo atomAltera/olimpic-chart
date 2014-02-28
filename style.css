@@ -1,0 +1,61 @@
+/* Styles go here */
+
+.page, .chart-wrapper, .chart {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.page {
+  position: relative;
+  background: #DDECFF;
+  overflow: hidden;
+}
+
+.page-header {
+  min-height: 120px;
+}
+
+.chart-background {
+  background: #C0D7E7;
+  
+  border-radius: 50% 50% 0 0;
+  
+  width: 1600px;
+  margin: 0 -400px;
+  
+  padding: 50px 0;
+}
+
+.chart-wrapper .title {
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  
+  font-family: 'sans';
+  text-transform: uppercase;
+  text-align: center;
+  
+  padding: 0 250px;
+}
+
+.chart {
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.tooltip {   
+  position: absolute;           
+  text-align: center;           
+  min-width: 60px;                  
+  padding: 10px;             
+  background: lightsteelblue;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;         
+}
+
+.tooltip .title {
+  font-size: 14px;
+  font-weight: bold;
+}
