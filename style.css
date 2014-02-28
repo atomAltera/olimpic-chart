@@ -5,6 +5,10 @@ body {
     font-family: verdana;
 }
 
+a {
+    text-decoration: none;
+}
+
 .page, .chart-wrapper, .chart {
     width: 800px;
     margin: 0 auto;
@@ -23,7 +27,25 @@ body {
 }
 
 .page-header {
-    min-height: 120px;
+    padding: 20px 40px 60px 20px;
+}
+
+.link {
+    font-size: 0.9em;
+    color: #abbfcc;
+}
+
+.link:hover {
+    color: #0878C8;
+}
+
+.left-link {
+    float: left;
+}
+
+.right-link {
+    float: right;
+    text-align: right;
 }
 
 
