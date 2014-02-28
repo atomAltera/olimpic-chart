@@ -2,6 +2,7 @@
 
 body {
     margin: 20px;
+    font-family: verdana;
 }
 
 .page, .chart-wrapper, .chart {
@@ -25,13 +26,14 @@ body {
     min-height: 120px;
 }
 
+
 .chart-background {
     background: #C0D7E7;
 
     border-radius: 50% 50% 0 0;
 
-    width: 1600px;
-    margin: 0 -400px;
+    width: 1000px;
+    margin: 0 -100px;
 
     padding: 50px 0 0 0;
 }
@@ -41,7 +43,6 @@ body {
     font-weight: bolder;
     color: white;
 
-    font-family: 'sans';
     text-transform: uppercase;
     text-align: center;
 
@@ -66,10 +67,61 @@ body {
     background: lightsteelblue;
     border: 0px;
     border-radius: 8px;
-    pointer-events: none;
 }
 
 .tooltip .title {
     font-size: 14px;
     font-weight: bold;
+}
+
+.page-footer {
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.lines {
+    margin-bottom: 60px;
+}
+
+.line-1, .line-2 {
+    border: none;
+    border-top: 2px solid #C0D7E7;
+}
+
+.line-1 {
+    margin: 10px 100px;
+}
+
+.line-2 {
+    margin: 10px 200px;
+}
+
+.button {
+    position: relative;
+    margin: 10px;
+
+    padding: 30px 100px;
+    background: #5BCA85;
+
+    border-radius: 8px;
+    border-bottom: 4px solid #57A478;
+
+    box-shadow:
+        0 0 2px rgba(0, 0, 0, 0.4),
+        inset 0 0 1px #57A478;
+
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2em;
+
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #5ed48d;
+}
+
+.button:active {
+    top: 4px;
+    border-bottom: 0;
 }
