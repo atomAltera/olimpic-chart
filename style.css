@@ -72,7 +72,7 @@ a {
     text-transform: uppercase;
     text-align: center;
 
-    padding: 0 250px;
+    /*padding: 0 250px;*/
 
     text-shadow:
         0 0 1px rgba(0, 0, 0, 0.3),
@@ -115,11 +115,11 @@ a {
 }
 
 .line-1 {
-    margin: 10px 100px;
+    margin: 10px 60px;
 }
 
 .line-2 {
-    margin: 10px 200px;
+    margin: 10px 160px;
 }
 
 .button {
