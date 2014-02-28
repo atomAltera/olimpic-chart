@@ -1,41 +1,55 @@
 /* Styles go here */
 
+body {
+    margin: 20px;
+}
+
 .page, .chart-wrapper, .chart {
-  width: 800px;
-  margin: 0 auto;
+    width: 800px;
+    margin: 0 auto;
 }
 
 .page {
-  position: relative;
-  background: #DDECFF;
-  overflow: hidden;
+    position: relative;
+    background: #DDECFF;
+    overflow: hidden;
+
+    opacity: 0;
+
+    border-radius: 10px;
+    border: 1px solid #ebf4ff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
 }
 
 .page-header {
-  min-height: 120px;
+    min-height: 120px;
 }
 
 .chart-background {
-  background: #C0D7E7;
-  
-  border-radius: 50% 50% 0 0;
-  
-  width: 1600px;
-  margin: 0 -400px;
-  
-  padding: 50px 0 0 0;
+    background: #C0D7E7;
+
+    border-radius: 50% 50% 0 0;
+
+    width: 1600px;
+    margin: 0 -400px;
+
+    padding: 50px 0 0 0;
 }
 
 .chart-wrapper .title {
-  font-size: 30px;
-  font-weight: bolder;
-  color: white;
-  
-  font-family: 'sans';
-  text-transform: uppercase;
-  text-align: center;
-  
-  padding: 0 250px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+
+    font-family: 'sans';
+    text-transform: uppercase;
+    text-align: center;
+
+    padding: 0 250px;
+
+    text-shadow:
+        0 0 1px rgba(0, 0, 0, 0.3),
+        0 0 6px rgba(16, 117, 189, 0.4)
 }
 
 .chart {
@@ -44,18 +58,18 @@
     margin: 0 auto;
 }
 
-.tooltip {   
-  position: absolute;           
-  text-align: center;           
-  min-width: 60px;                  
-  padding: 10px;             
-  background: lightsteelblue;   
-  border: 0px;      
-  border-radius: 8px;           
-  pointer-events: none;         
+.tooltip {
+    position: absolute;
+    text-align: center;
+    min-width: 60px;
+    padding: 10px;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
 }
 
 .tooltip .title {
-  font-size: 14px;
-  font-weight: bold;
+    font-size: 14px;
+    font-weight: bold;
 }

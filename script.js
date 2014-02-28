@@ -32,9 +32,7 @@ var node = chart.selectAll(".node")
 
 node.transition()
     .duration(1000)
-    .delay(function (d, i) {
-        return i * 100
-    })
+    .delay(function (d, i) { return i * 50 })
     .attr('opacity', '1')
     .attr('transform', function (d) {
         return "translate(" + d.x + "," + d.y + ")";
@@ -75,6 +73,10 @@ node.append('image')
 //   .style('letter-spacing', '-1px')
 //   .style('font-size', function(d) { return d.r / 2.3 })
 //   .text(function(d) { return d.value; });
+
+d3.select('.page').transition()
+    .duration(1000)
+    .style('opacity', '1');
 
 node.on("mouseover", function (d) {
     d3.select(this).select('circle').style('stroke', '#1076BC')
