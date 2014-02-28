@@ -108,6 +108,13 @@ node.on("mouseover", function (d) {
     hint_text_title.text(d.text);
     hint_text_desc.text(d.value + " постов");
 
+    var rect_width = Math.max(
+        hint_text_title[0][0].getComputedTextLength(),
+        hint_text_desc[0][0].getComputedTextLength())
+        + 10;
+
+    hint_rect.attr('width', rect_width);
+
     if (hint.dis_timeout) {
         clearTimeout(hint.dis_timeout);
         hint.dis_timeout = false;
@@ -115,20 +122,16 @@ node.on("mouseover", function (d) {
         hint.transition()
             .duration(100)
             .style('opacity', '1')
-            .attr('transform', "translate(" + (d.x + d.r + 10) + "," + (d.y - d.r) + ")")
+            .attr('transform', "translate(" + (d.x - rect_width / 2) + "," + (d.y - hint_height - d.r / 2) + ")")
     } else {
         hint
-            .attr('transform', "translate(" + (d.x + d.r + 10) + "," + (d.y - d.r) + ")")
+            .attr('transform', "translate(" + (d.x - rect_width / 2) + "," + (d.y - hint_height - d.r / 2) + ")")
             .transition()
             .duration(100)
             .style('opacity', '1')
 
     }
-    hint_rect.attr('width', Math.max(
-        hint_text_title[0][0].getComputedTextLength(),
-        hint_text_desc[0][0].getComputedTextLength())
-        + 10
-    );
+
 });
 
 function remove_hint() {
